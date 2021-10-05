@@ -1,7 +1,7 @@
 <h1 align="center">
 Git and Github for Beginners
 </h1>
-<p>by Gwen Faraday and freeCodeCamp</p>
+<p align="center">by Gwen Faraday and freeCodeCamp</p>
 
 ## Table of Contents
 1. [Git Commands](#git-commands)
