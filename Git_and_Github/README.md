@@ -6,6 +6,7 @@ Git and Github for Beginners
 ## Table of Contents
 1. [Git Commands](#git-commands)
 2. [SSH Keys](#ssh-keys)
+3. [Git Brancing](#git-branching)
 
 ## Git Commands
 
@@ -25,6 +26,23 @@ status - outputs tracked, untracked, and modified files within .git
 git status
 ```
 
+branch - displays branches.
+```
+# Displays all branches
+git branch
+
+# Deletes main branch
+git branch -d main
+```
+checkout - switches and modifies branches
+```
+# Creates and switches to a branch named main
+git checkout -b main
+
+# Switches back to master branch
+git checkout master
+```
+
 add - tracks files and changes.
 ```
 # Adds untracked and modiefied files into the .git as tracked
@@ -36,7 +54,7 @@ commit - saves your files.
 git commit -m "added html"
 ```
 
-remote - used to add a remote repo address within a local local repo
+remote - used to add a remote repo address within a local local repo.
 ```
 git remote add origin git@github.com:abechoi/demo-repo2.git
 ```
@@ -90,3 +108,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 # Then in Github, go to Settings > SSH and GPG Keys > New SSH Key, and paste
 ```
+
+## Git Branching
+
+1. 
