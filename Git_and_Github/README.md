@@ -6,7 +6,6 @@ Git and Github for Beginners
 ## Table of Contents
 1. [Git Commands](#git-commands)
 2. [SSH Keys](#ssh-keys)
-3. [Git Brancing](#git-branching)
 
 ## Git Commands
 
@@ -24,6 +23,25 @@ git clone git@github.com:abechoi/demo-repo.git
 status - outputs tracked, untracked, and modified files within .git
 ```
 git status
+```
+
+diff - shows changes since last commit.
+```
+git diff
+
+# Shows changes against the master branch
+git diff master
+```
+
+log - show all commits
+```
+git log
+```
+
+merge - merges a branch into the current
+```
+# Merges master branch into current branch
+git branch master
 ```
 
 branch - displays branches.
@@ -70,6 +88,24 @@ push - upload commits to a remote repository.
 ```
 
 pull - download changes from remote repository.
+```
+git pull
+```
+
+reset - unstage changes, from tracked to untracked
+```
+# undo a commit
+git reset
+
+# undo changes to 1 change prior to HEAD
+git reset HEAD~1
+
+# undo changes to hash id, which can be found using git log
+git reset 142687bb54b659c29fb523103e44f682cc4c3747
+
+# completely unstaged and removed
+git reset --hard 142687bb54b659c29fb523103e44f682cc4c3747
+```
 
 ## SSH Keys
 
@@ -108,7 +144,3 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 # Then in Github, go to Settings > SSH and GPG Keys > New SSH Key, and paste
 ```
-
-## Git Branching
-
-1. 
